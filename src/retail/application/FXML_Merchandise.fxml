@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="retail.application.FXML_MerchandiseController">
+   <children>
+      <Label layoutX="57.0" layoutY="73.0" text="Name" />
+      <Label layoutX="60.0" layoutY="112.0" text="Price" />
+      <Label layoutX="46.0" layoutY="141.0" text="Description" />
+      <TextField fx:id="merc_name" layoutX="143.0" layoutY="69.0" prefHeight="32.0" prefWidth="149.0" />
+      <TextField fx:id="merc_price" layoutX="143.0" layoutY="108.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextArea fx:id="merc_desc" layoutX="141.0" layoutY="143.0" prefHeight="52.0" prefWidth="149.0" />
+      <Button fx:id="merc_ok" layoutX="143.0" layoutY="235.0" mnemonicParsing="false" onAction="#handle_merc_ok" text="OK" />
+      <Button fx:id="merc_cancel" layoutX="236.0" layoutY="235.0" mnemonicParsing="false" onAction="#handle_merc_cancel" text="Cancel" />
+      <Label layoutX="63.0" layoutY="26.0" text="Merchandise Information" />
+      <Label layoutX="169.0" layoutY="274.0" text="Press OK to send value to database" />
+   </children>
+</AnchorPane>
